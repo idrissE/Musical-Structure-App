@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linear_vertical_container"
+    tools:context=".SongDetailActivity">
+
+    <TextView
+        android:id="@+id/error_message"
+        style="@style/error_message_style"
+        android:text="@string/no_song_error" />
+
+    <RelativeLayout style="@style/player_thumbnail_container">
+
+        <ImageView
+            android:id="@+id/song_thumbnail"
+            style="@style/base_image_style"
+            tools:src="@drawable/album_poster4" />
+
+        <ProgressBar
+            style="@style/progress_bar_style"
+            android:progressTint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/player_info_container">
+
+        <TextView
+            android:id="@+id/song_title"
+            style="@style/song_name_style"
+            tools:text="Song Name" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            style="@style/artist_name_style"
+            tools:text="Artist Name" />
+
+        <LinearLayout style="@style/player_controls_container">
+
+            <ImageButton
+                android:id="@+id/rewind_btn"
+                style="@style/player_control_style"
+                android:src="@drawable/baseline_fast_rewind_white_24" />
+
+            <ImageButton
+                android:id="@+id/play_pause_btn"
+                style="@style/play_control_style"
+                android:src="@drawable/round_pause_circle_filled_white_36" />
+
+            <ImageButton
+                android:id="@+id/forward_btn"
+                style="@style/player_control_style"
+                android:src="@drawable/baseline_fast_forward_white_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,189 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <!--Base views styles-->
+    <style name="base_container_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="container_with_background_style" parent="base_container_style">
+        <item name="android:background">@color/backgroundColor</item>
+    </style>
+
+    <style name="base_image_style" parent="base_container_style">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="gridView_container_style" parent="container_with_background_style">
+        <item name="android:horizontalSpacing">@dimen/half_dim</item>
+        <item name="android:numColumns">3</item>
+        <item name="android:padding">@dimen/half_dim</item>
+        <item name="android:verticalSpacing">@dimen/half_dim</item>
+    </style>
+
+    <style name="linear_vertical_container" parent="container_with_background_style">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="home_container" parent="linear_vertical_container">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="home_card_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/home_card_height</item>
+        <item name="android:layout_margin">@dimen/base_dim</item>
+    </style>
+
+    <style name="home_card_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:alpha">.8</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:padding">@dimen/half_dim</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="album_card_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+    </style>
+
+    <style name="album_thumbnail_style" parent="base_image_style">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">3</item>
+    </style>
+
+    <style name="single_album_container" parent="base_container_style">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="album_info_container" parent="single_album_container">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#000a12</item>
+        <item name="android:padding">@dimen/half_dim</item>
+    </style>
+
+    <style name="single_album_text_base_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="album_title_style" parent="single_album_text_base_style">
+        <item name="android:gravity">bottom</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--single song list item style-->
+    <style name="songs_lv_container_style" parent="base_container_style">
+        <item name="android:background">@color/backgroundColor</item>
+        <item name="android:dividerHeight">.5dp</item>
+    </style>
+
+    <style name="list_item_container_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_base_size</item>
+    </style>
+
+    <style name="song_item_thumbnail_style">
+        <item name="android:layout_width">@dimen/item_base_size</item>
+        <item name="android:layout_height">@dimen/item_base_size</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="song_item_title_style" parent="album_title_style">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="song_item_info_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_base_size</item>
+        <item name="android:layout_toRightOf">@id/thumbnail</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/base_dim</item>
+    </style>
+
+    <style name="play_btn_item_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/base_dim</item>
+    </style>
+
+    <!-- Player styles -->
+    <style name="player_info_container" parent="base_container_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/base_dim</item>
+    </style>
+
+    <style name="player_text_base_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/half_dim</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="song_name_style" parent="player_text_base_style">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="artist_name_style" parent="player_text_base_style">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="player_controls_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">@dimen/half_dim</item>
+        <item name="android:paddingTop">@dimen/half_dim</item>
+    </style>
+
+    <style name="player_control_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="play_control_style" parent="player_control_style">
+        <item name="android:tint">@color/colorPrimary</item>
+    </style>
+
+    <style name="progress_bar_style" parent="@style/Base.Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/quarter_dim</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">45</item>
+    </style>
+
+    <style name="player_thumbnail_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="error_message_style" parent="base_container_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>

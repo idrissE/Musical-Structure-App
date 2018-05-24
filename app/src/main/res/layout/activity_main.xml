@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/home_container"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/all_albums_cv"
+        style="@style/home_card_style"
+        android:elevation="@dimen/half_dim"
+        card_view:cardCornerRadius="@dimen/quarter_dim">
+
+        <RelativeLayout style="@style/base_container_style">
+
+            <ImageView
+                style="@style/base_image_style"
+                android:src="@drawable/song_poster4" />
+
+            <TextView
+                style="@style/home_card_text_style"
+                android:text="@string/all_albums" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/all_songs_cv"
+        style="@style/home_card_style"
+        android:elevation="@dimen/half_dim"
+        card_view:cardCornerRadius="@dimen/quarter_dim">
+
+        <RelativeLayout style="@style/base_container_style">
+
+            <ImageView
+                style="@style/base_image_style"
+                android:contentDescription="@string/all_songs"
+                android:src="@drawable/song_poster3" />
+
+            <TextView
+                style="@style/home_card_text_style"
+                android:text="@string/all_songs" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

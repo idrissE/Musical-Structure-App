@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/album_card_style"
+    card_view:cardCornerRadius="@dimen/quarter_dim"
+    card_view:cardElevation="@dimen/half_dim">
+
+    <LinearLayout style="@style/single_album_container">
+
+        <ImageView
+            android:id="@+id/album_poster_thumbnail"
+            style="@style/album_thumbnail_style"
+            tools:src="@drawable/album_poster2" />
+
+        <LinearLayout
+            android:id="@+id/album_info"
+            style="@style/album_info_container">
+
+            <TextView
+                android:id="@+id/album_title"
+                style="@style/album_title_style"
+                tools:text="Song Title" />
+
+            <TextView
+                android:id="@+id/album_songs_nb"
+                style="@style/single_album_text_base_style"
+                tools:text="9 songs" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

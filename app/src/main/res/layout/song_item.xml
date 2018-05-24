@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/list_item_container_style">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        style="@style/song_item_thumbnail_style"
+        tools:src="@drawable/album_poster4" />
+
+    <LinearLayout style="@style/song_item_info_container">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/song_item_title_style"
+            tools:text="Song Title" />
+
+        <TextView
+            android:id="@+id/artist"
+            style="@style/single_album_text_base_style"
+            tools:text="Artist Name" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/play_btn_item_style"
+        android:src="@drawable/baseline_play_arrow_white_24" />
+</RelativeLayout>

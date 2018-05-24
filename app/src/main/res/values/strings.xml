@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Musical Structure App</string>
+    <!-- Labels -->
+    <string name="label_albums">Albums</string>
+    <string name="label_songs">Songs</string>
+    <string name="label_player">Media Player</string>
+    <!-- Home text -->
+    <string name="all_albums">Discover All Albums</string>
+    <string name="all_songs">Discover All Songs</string>
+    <!-- Error message -->
+    <string name="no_song_error">Sorry this song is not available</string>
+    <!--Album-->
+    <string name="songs_by_album">%d song(s)</string>
+    <!--Player controls-->
+    <string name="playing">Playing</string>
+    <string name="pausing">Pausing</string>
+    <string name="backwarding">Backwarding</string>
+    <string name="forwarding">Forwarding</string>
+</resources>
